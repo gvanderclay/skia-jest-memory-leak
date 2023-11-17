@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@shopify/react-native-skia": "0.1.196",
+    "@shopify/react-native-skia": "0.1.219",
     "expo": "~49.0.13",
     "expo-status-bar": "~1.6.0",
     "jest": "^29.2.1",
@@ -32,5 +32,6 @@
     "globalSetup": "@shopify/react-native-skia/globalJestSetup.js",
     "workerIdleMemoryLimit": "512mb"
   },
-  "private": true
+  "private": true,
+  "packageManager": "yarn@4.0.2"
 }
