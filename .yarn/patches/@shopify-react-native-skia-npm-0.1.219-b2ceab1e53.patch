@@ -1,0 +1,61 @@
+diff --git a/goodJestEnv.mjs b/goodJestEnv.mjs
+new file mode 100644
+index 0000000000000000000000000000000000000000..b96a7b44c529bc6afbe20bbf874ee34b6f547533
+--- /dev/null
++++ b/goodJestEnv.mjs
+@@ -0,0 +1,26 @@
++/* eslint-disable import/no-default-export */
++// eslint-disable-next-line import/no-extraneous-dependencies
++import { TestEnvironment } from "jest-environment-node";
++import { LoadSkiaWeb } from "@shopify/react-native-skia/lib/commonjs/web/LoadSkiaWeb.js";
++
++// Not setting anything since this sets global.CanvasKit
++await LoadSkiaWeb();
++
++export default class SkiaEnvironment extends TestEnvironment {
++  constructor(config, context) {
++    super(config, context);
++  }
++
++  async setup() {
++    await super.setup();
++    // Setting based on the value set by LoadSkiaWeb.
++    // Not sure if this is the best approach but it gets my tests running
++    this.global.CanvasKit = global.CanvasKit;
++  }
++
++  async teardown() {}
++
++  getVmContext() {
++    return super.getVmContext();
++  }
++}
+diff --git a/ogJestEnv.mjs b/ogJestEnv.mjs
+new file mode 100644
+index 0000000000000000000000000000000000000000..12182acfcd3f066374b17ed3993fcf5698e56db0
+--- /dev/null
++++ b/ogJestEnv.mjs
+@@ -0,0 +1,23 @@
++/* eslint-disable import/no-default-export */
++// eslint-disable-next-line import/no-extraneous-dependencies
++import { TestEnvironment } from "jest-environment-node";
++import { LoadSkiaWeb } from "@shopify/react-native-skia/lib/commonjs/web/LoadSkiaWeb";
++
++const CanvasKit = await LoadSkiaWeb();
++
++export default class SkiaEnvironment extends TestEnvironment {
++  constructor(config, context) {
++    super(config, context);
++  }
++
++  async setup() {
++    await super.setup();
++    this.global.CanvasKit = CanvasKit;
++  }
++
++  async teardown() {}
++
++  getVmContext() {
++    return super.getVmContext();
++  }
++}

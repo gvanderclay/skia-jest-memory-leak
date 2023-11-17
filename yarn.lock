@@ -2798,6 +2798,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@shopify/react-native-skia@patch:@shopify/react-native-skia@npm%3A0.1.219#~/.yarn/patches/@shopify-react-native-skia-npm-0.1.219-b2ceab1e53.patch":
+  version: 0.1.219
+  resolution: "@shopify/react-native-skia@patch:@shopify/react-native-skia@npm%3A0.1.219#~/.yarn/patches/@shopify-react-native-skia-npm-0.1.219-b2ceab1e53.patch::version=0.1.219&hash=e61fcd"
+  dependencies:
+    canvaskit-wasm: "npm:0.38.2"
+    react-reconciler: "npm:^0.27.0"
+  peerDependencies:
+    react: ">=18.0"
+    react-native: ">=0.64"
+    react-native-reanimated: ">=2.0.0"
+  peerDependenciesMeta:
+    react-native:
+      optional: true
+    react-native-reanimated:
+      optional: true
+  bin:
+    setup-skia-web: scripts/setup-canvaskit.js
+  checksum: 816e300fa77098d487cc0b15ed29cf22fa90f4c1f84b19b0b6f2bd80240bbf2724fbd74d3bca97ab075d947250c737c75093d3246e63cd015dfbf4fbb9dfe2ce
+  languageName: node
+  linkType: hard
+
 "@sideway/address@npm:^4.1.3":
   version: 4.1.4
   resolution: "@sideway/address@npm:4.1.4"
@@ -10518,7 +10539,7 @@ __metadata:
   resolution: "with-issue@workspace:packages/with-issue"
   dependencies:
     "@babel/core": "npm:^7.20.0"
-    "@shopify/react-native-skia": "npm:0.1.219"
+    "@shopify/react-native-skia": "patch:@shopify/react-native-skia@npm%3A0.1.219#~/.yarn/patches/@shopify-react-native-skia-npm-0.1.219-b2ceab1e53.patch"
     expo: "npm:~49.0.13"
     expo-status-bar: "npm:~1.6.0"
     jest: "npm:^29.2.1"
@@ -10533,7 +10554,7 @@ __metadata:
   resolution: "without-issue@workspace:packages/without-issue"
   dependencies:
     "@babel/core": "npm:^7.20.0"
-    "@shopify/react-native-skia": "npm:0.1.219"
+    "@shopify/react-native-skia": "patch:@shopify/react-native-skia@npm%3A0.1.219#~/.yarn/patches/@shopify-react-native-skia-npm-0.1.219-b2ceab1e53.patch"
     expo: "npm:~49.0.13"
     expo-status-bar: "npm:~1.6.0"
     jest: "npm:^29.2.1"

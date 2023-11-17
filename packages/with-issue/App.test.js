@@ -1,3 +1,6 @@
+/**
+ * @jest-environment @shopify/react-native-skia/ogJestEnv.mjs
+ */
 import React from "react";
 import renderer from "react-test-renderer";
 
