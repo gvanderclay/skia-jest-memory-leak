@@ -9412,15 +9412,6 @@ __metadata:
 "skia-jest-memory@workspace:.":
   version: 0.0.0-use.local
   resolution: "skia-jest-memory@workspace:."
-  dependencies:
-    "@babel/core": "npm:^7.20.0"
-    "@shopify/react-native-skia": "npm:0.1.219"
-    expo: "npm:~49.0.13"
-    expo-status-bar: "npm:~1.6.0"
-    jest: "npm:^29.2.1"
-    jest-expo: "npm:^49.0.0"
-    react: "npm:18.2.0"
-    react-native: "npm:0.72.5"
   languageName: unknown
   linkType: soft
 
@@ -10521,6 +10512,36 @@ __metadata:
   checksum: 449fa5c44ed120ccecfe18c433296a4978a7583bf2391c50abce13f76878d2476defde04d0f79db8165bdf432853c1f8389d0485ca6e8ebce3bbcded513d5e6a
   languageName: node
   linkType: hard
+
+"with-issue@workspace:packages/with-issue":
+  version: 0.0.0-use.local
+  resolution: "with-issue@workspace:packages/with-issue"
+  dependencies:
+    "@babel/core": "npm:^7.20.0"
+    "@shopify/react-native-skia": "npm:0.1.219"
+    expo: "npm:~49.0.13"
+    expo-status-bar: "npm:~1.6.0"
+    jest: "npm:^29.2.1"
+    jest-expo: "npm:^49.0.0"
+    react: "npm:18.2.0"
+    react-native: "npm:0.72.5"
+  languageName: unknown
+  linkType: soft
+
+"without-issue@workspace:packages/without-issue":
+  version: 0.0.0-use.local
+  resolution: "without-issue@workspace:packages/without-issue"
+  dependencies:
+    "@babel/core": "npm:^7.20.0"
+    "@shopify/react-native-skia": "npm:0.1.219"
+    expo: "npm:~49.0.13"
+    expo-status-bar: "npm:~1.6.0"
+    jest: "npm:^29.2.1"
+    jest-expo: "npm:^49.0.0"
+    react: "npm:18.2.0"
+    react-native: "npm:0.72.5"
+  languageName: unknown
+  linkType: soft
 
 "wonka@npm:^4.0.14":
   version: 4.0.15
